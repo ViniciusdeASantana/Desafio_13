@@ -15,7 +15,17 @@ body {
     @media(min-width: 1024px) {
         background: url(../img/rectangle.png) no-repeat;
         background-size: 90%;
-        background-position: 280% 30%;
+        background-position: 250% 10%;
+    }
+
+    @media(min-width: 1440px) {
+        background-size: 80%;
+        background-position: 260% 0%;
+    }
+
+    @media(min-width: 2560px) {
+        background-size: 55%;
+        background-position: 100% 0%;
     }
 
 }
@@ -136,9 +146,9 @@ body {
     @media(min-width: 1024px) {
         display: block;
         position: absolute;
-        bottom: 19%;
-        width: 70%;
-        right: -20%;
+        bottom: 7%;
+        width: 90%;
+        right: -40%;
         z-index: 1;
     }
 }
@@ -147,6 +157,10 @@ body {
 
 .main-container {
     background-color: #bad8eb45;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
 }
 
 .main__img {
@@ -162,13 +176,23 @@ body {
     @media(min-width: 768px) {
         padding: 0px 76px;
     }
+
+    @media(min-width: 1024px) {
+        flex-direction: row;
+    }
 }
 
 .main-wrapper__item {
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
     gap: 24px;
+
+    @media(min-width: 1024px) {
+        align-items: start;
+        text-align: start;
+    }
 }
 
 .main__title {
@@ -201,12 +225,6 @@ body {
     font-size: 14px;
     padding: 16px 32px;
     margin-bottom: 80px;
-
-    @media(min-width: 768px) {
-        font-size: 18px;
-        padding: 20px 40px;
-        margin-top: 30px;
-    }
 }
 
 /* Article control container */
@@ -244,8 +262,8 @@ body {
     }
 
     @media(min-width: 1024px) {
-        width: 50%;
-        height: 50%;
+        width: 75%;
+        height: 75%;
     }
 }
 
@@ -291,5 +309,8 @@ body {
     font-size: 14px;
     padding: 20px 40px;
 
+    @media(min-width: 1024px) {
+        white-space: nowrap;
+    }
     
 }
