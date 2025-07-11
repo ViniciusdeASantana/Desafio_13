@@ -209,6 +209,17 @@ body {
     }
 }
 
+/* Article control container */
+
+.article-control__container {
+    display: grid;
+
+    @media(min-width: 1024px) {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 32px;
+    }
+}
+
 /* product */
 
 .article-content {
@@ -231,6 +242,11 @@ body {
         width: 333px;
         height: 366px;
     }
+
+    @media(min-width: 1024px) {
+        width: 50%;
+        height: 50%;
+    }
 }
 
 .article-wrapper {
@@ -241,6 +257,8 @@ body {
     @media(min-width: 768px) {
         padding: 0px 180px;
     }
+
+    
 }
 
 .article__title {
